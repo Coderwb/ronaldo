@@ -2,96 +2,100 @@
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <!-- Denna rad ser till att sidan passar perfekt på både mobiler och datorer -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Fakta om Cristiano Ronaldo - Av Aron Nordqvist</title>
     <style>
-        /* Bakgrunden är designad som Real Madrids legendariska vita tröja */
+        /* Hela bakgrunden är nu Real Madrids vita tröja med ränder */
         body { 
-            background-color: #fcfcfc; 
+            background-color: #f4f4f4; 
             color: #111; 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             line-height: 1.6; 
             margin: 0; 
             padding: 10px; 
             text-align: center;
-            /* Gulddetaljer som på tröjan */
-            border-top: 8px solid #d4af37; 
+            /* De tre guld/blå ränderna på tröjans axlar högst upp */
+            border-top: 15px double #00529b;
         }
         
-        /* Container som automatiskt ändrar storlek efter skärmen (mobil/dator) */
+        /* Denna box formar själva tröj-kroppen */
         .container { 
-            max-width: 800px; 
+            max-width: 700px; 
             width: 90%;
             margin: 20px auto; 
             background-color: #ffffff; 
-            padding: 20px; 
-            border-radius: 15px; 
-            /* En snygg skugga i Real Madrids kungsblå färg */
-            box-shadow: 0px 0px 25px rgba(0, 82, 159, 0.15); 
+            padding: 25px; 
+            border-radius: 10px; 
+            /* Blåa linjer på sidorna av tröjan */
+            border-left: 8px solid #00529b;
+            border-right: 8px solid #00529b;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
             text-align: left;
-            border: 2px solid #0052159;
-            border-left: 5px solid #0052159; /* Blå tröjdetalj */
         }
 
-        /* Rubriker i guld och blått */
         h1, h2, h3 { 
             color: #00529b; 
             text-align: center; 
         }
         h1 { 
-            font-size: 2em; 
-            border-bottom: 3px solid #d4af37; 
+            font-size: 2.2em; 
+            border-bottom: 3px solid #d4af37; /* Guldlinje */
             padding-bottom: 10px; 
-            margin-top: 10px;
         }
         h2 {
-            font-size: 1.4em;
-            color: #d4af37;
-            background-color: #00529b;
-            padding: 8px;
+            font-size: 1.3em;
+            color: #fff;
+            background-color: #00529b; /* Kungligt blå */
+            padding: 10px;
             border-radius: 5px;
+            border-bottom: 3px solid #d4af37;
         }
+        
+        /* Styling för bilderna så de passar perfekt på mobil och dator */
+        .ronaldo-img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            border: 3px solid #00529b;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+
         ul { 
             list-style-type: none; 
             padding-left: 0; 
         }
         li { 
             margin-bottom: 12px; 
-            padding: 10px;
-            background-color: #f7f9fc;
+            padding: 12px;
+            background-color: #f9f9f9;
             border-radius: 6px;
-            border-left: 4px solid #d4af37;
+            border-left: 5px solid #d4af37; /* Guld-kant på listan */
         }
         .siu { 
-            font-size: 2.5em; 
+            font-size: 2.8em; 
             font-weight: bold; 
-            color: #00529b; 
+            color: #cc0000; 
             text-align: center; 
             margin: 30px 0; 
-            letter-spacing: 3px;
-            text-shadow: 2px 2px #f0f0f0;
+            text-shadow: 2px 2px #ccc;
         }
         
-        /* Footer för det största fanet Aron */
         footer { 
             margin-top: 40px; 
             padding-top: 20px; 
-            border-top: 2px solid #eee; 
+            border-top: 3px dashed #d4af37; 
             text-align: center; 
-            font-size: 1.3em; 
+            font-size: 1.4em; 
             color: #00529b; 
             font-weight: bold;
-            letter-spacing: 1px;
         }
 
-        /* Extra mobilanpassning för riktigt små skärmar */
         @media (max-width: 600px) {
-            body { padding: 5px; }
-            .container { padding: 15px; width: 95%; }
-            h1 { font-size: 1.6em; }
-            h2 { font-size: 1.2em; }
-            footer { font-size: 1.1em; }
+            h1 { font-size: 1.7em; }
+            .container { width: 95%; padding: 15px; }
         }
     </style>
 </head>
@@ -112,6 +116,9 @@
             <li><b>Landslag:</b> Portugal (Lagkapten)</li>
         </ul>
 
+        <!-- BILD 1: SIUUU-MÅLGESTEN -->
+        <img class="ronaldo-img" src="https://gmanews.tv" alt="Ronaldo firar mål">
+
         <h2>⚽ Karriär och Klubbar</h2>
         <ul>
             <li><b>Sporting CP (2002–2003):</b> Klubben där allt började. Gjorde 5 mål på 31 matcher innan han blev scoutad av Sir Alex Ferguson.</li>
@@ -121,6 +128,9 @@
             <li><b>Manchester United (2021–2022):</b> En känslosam återkomst till England där han fortsatte att leverera viktiga mål i ligan och Champions League.</li>
             <li><b>Al-Nassr (2023–nutid):</b> Flyttade till Saudiarabien och blev världens bäst betalda idrottare. Öser fortfarande in mål.</li>
         </ul>
+
+        <!-- BILD 2: MED CHAMPIONS LEAGUE-POKALEN -->
+        <img class="ronaldo-img" src="https://psg.media" alt="Ronaldo med pokal">
 
         <h2>🏆 Största Meriter och Titlar</h2>
         <ul>
@@ -138,10 +148,13 @@
             <li><b>Historisk i sex VM:</b> Har skrivit historia genom att göra mål i sex olika världsmästerskap (från VM 2006 till VM 2026).</li>
         </ul>
 
+        <!-- BILD 3: I AL-NASSR -->
+        <img class="ronaldo-img" src="https://portugaltwn.com" alt="Ronaldo i Al-Nassr">
+
         <h2>💪 Livsstil och Träning</h2>
         <ul>
-            <li><b>Extrem fysik:</b> Ronaldo är känd för att träna hårdast av alla. Han har en biologisk åller som är mycket yngre än hans verkliga ålder tack vare sin stenhårda disciplin.</li>
-            <li><b>Diet:</b> Äter upp till sex strikta måltider om dagen, främst fisk, kyckling och grönsaker. Dricker aldrig alkohol eller läsk (minns när han flyttade på Coca-Cola-flaskorna under EM).</li>
+            <li><b>Extrem fysik:</b> Ronaldo är känd för att träna hårdast av alla. Han har en biologisk ålder som är mycket yngre än hans verkliga ålder tack vare sin stenhårda disciplin.</li>
+            <li><b>Diet:</b> Äter upp till sex strikta måltider om dagen, främst fisk, kyckling och grönsaker. Dricker aldrig alkohol eller läsk.</li>
             <li><b>Sömnmetod:</b> Istället för att sova 8 timmar i sträck tar han ofta fem stycken 90-minuters tupplurar utspridda över dygnet.</li>
         </ul>
 
